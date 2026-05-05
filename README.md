@@ -10,6 +10,7 @@ Categorized so things stay clear as more land here.
 
 #### Linux tools
 
+- **[hydra-llm](https://github.com/ra-yavuz/hydra-llm)** &nbsp; CLI + KDE Plasma 6 widget. Run local LLMs the easy way. Single-binary CLI wraps llama.cpp in Docker, with a curated catalog of community-quantised GGUFs that download anonymously, hardware-aware model recommendations, persistent chat sessions, and per-alias system prompts and sampling params. No telemetry, no API key.
 - **[inhibit-charge](https://github.com/ra-yavuz/inhibit-charge)** &nbsp; CLI + daemon. Park your Linux laptop battery at a target charge level using the kernel's `inhibit-charge` mode. Unlike threshold-only tools (TLP, GNOME, KDE), the battery does not trickle-cycle on AC.
 - **[herald](https://github.com/ra-yavuz/herald)** &nbsp; CLI + systemd timer. Prints a daily quote at the top of every new terminal and at login. Cached, configurable refresh, local fallback pool, optional user prefix.
 - **[meowtrics](https://github.com/ra-yavuz/meowtrics)** &nbsp; A small animated emoji that lives in your system tray and gossips about your machine. KDE Plasma 6 plasmoid plus StatusNotifierItem support for GNOME / XFCE / Cinnamon / Budgie / MATE / LXQt, plus JSON output for Sway / i3 / polybar bars.
