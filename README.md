@@ -20,7 +20,15 @@ Categorized so things stay clear as more land here.
 
 ### Apt repository
 
-For all my Debian / Ubuntu packages: **[ra-yavuz.github.io/apt](https://ra-yavuz.github.io/apt/)** is a single signed apt archive. Add it once, get every tool with `apt install` and `apt upgrade`, GPG-verified signatures on every package. Source: [ra-yavuz/apt](https://github.com/ra-yavuz/apt).
+Every Debian / Ubuntu tool above in one place, kept up to date with the rest of your system. **[ra-yavuz.github.io/apt](https://ra-yavuz.github.io/apt/)** is a single signed apt archive. Add it once, get every tool with `apt install` and `apt upgrade`, GPG-verified signatures on every package. Source: [ra-yavuz/apt](https://github.com/ra-yavuz/apt).
+
+One line. Sets up the signed repo if not already added, refreshes the package index, and installs the package. Replace `<package>` with `inhibit-charge`, `herald`, `meowtrics`, `lillycoder`, or `hydra-llm`:
+
+```bash
+sudo bash -c 'set -e; install -m 0755 -d /etc/apt/keyrings && curl -fsSL https://ra-yavuz.github.io/apt/pubkey.gpg -o /etc/apt/keyrings/ra-yavuz.gpg && echo "deb [signed-by=/etc/apt/keyrings/ra-yavuz.gpg] https://ra-yavuz.github.io/apt stable main" > /etc/apt/sources.list.d/ra-yavuz.list && apt update && apt install -y <package>'
+```
+
+Once the repo is set up, future installs and upgrades are just `sudo apt update && sudo apt install <package>` and `sudo apt upgrade`. The `sudo apt update` step is required, without it apt will not see new packages or new versions.
 
 If you don't want to add a third-party apt source, every release also attaches a prebuilt `.deb` to its GitHub Releases page.
 
