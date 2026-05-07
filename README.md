@@ -30,6 +30,8 @@ sudo bash -c 'set -e; install -m 0755 -d /etc/apt/keyrings && curl -fsSL https:/
 
 Once the repo is set up, future installs and upgrades are just `sudo apt update && sudo apt install <package>` and `sudo apt upgrade`. The `sudo apt update` step is required, without it apt will not see new packages or new versions.
 
+**Tested on Ubuntu (Linux only).** Should work on any recent Debian / Ubuntu derivative, and on **WSL2** Ubuntu for the projects that don't depend on hardware sysfs or a Linux desktop tray. **macOS** support is per-project: `hydra-llm` runs under Docker Desktop and `lillycoder` installs from source via `pip`; the rest are Linux-only by design. Each project page has its own *Platform support* section.
+
 If you don't want to add a third-party apt source, every release also attaches a prebuilt `.deb` to its GitHub Releases page.
 
 ### Hub
