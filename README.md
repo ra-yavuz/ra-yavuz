@@ -17,6 +17,10 @@ Categorized so things stay clear as more land here.
 - **[herald](https://github.com/ra-yavuz/herald)** &nbsp; CLI + systemd timer. Prints a daily quote at the top of every new terminal and at login. Cached, configurable refresh, local fallback pool, optional user prefix.
 - **[meowtrics](https://github.com/ra-yavuz/meowtrics)** &nbsp; A small animated emoji that lives in your system tray and gossips about your machine. KDE Plasma 6 plasmoid plus StatusNotifierItem support for GNOME / XFCE / Cinnamon / Budgie / MATE / LXQt, plus JSON output for Sway / i3 / polybar bars.
 
+#### Docs & guides
+
+- **[vigil](https://github.com/ra-yavuz/vigil)** &nbsp; How to build an always-on, autonomous AI operations assistant, and how to keep it diligent. A documentation project describing the architecture of a persistent AI operator (persistent agent subprocess, supervisor, transport split, channel multiplexers, MCP tools) as a reference design, plus the load-bearing piece most write-ups skip: the doctrine + hooks pattern that re-asserts an engineering standard on every turn so an auto-approved agent keeps verifying before it acts, refuses workarounds, and never claims done without a real run. Ships a generic `doctrine.md`, both Claude Code hook scripts, and a `settings.json` fragment.
+
 (more categories will appear here as projects in them are published.)
 
 ### Apt repository
