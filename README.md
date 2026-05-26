@@ -16,6 +16,7 @@ Categorized so things stay clear as more land here.
 - **[inhibit-charge](https://github.com/ra-yavuz/inhibit-charge)** &nbsp; CLI + daemon. Park your Linux laptop battery at a target charge level using the kernel's `inhibit-charge` mode. Unlike threshold-only tools (TLP, GNOME, KDE), the battery does not trickle-cycle on AC.
 - **[herald](https://github.com/ra-yavuz/herald)** &nbsp; CLI + systemd timer. Prints a daily quote at the top of every new terminal and at login. Cached, configurable refresh, local fallback pool, optional user prefix.
 - **[meowtrics](https://github.com/ra-yavuz/meowtrics)** &nbsp; A small animated emoji that lives in your system tray and gossips about your machine. KDE Plasma 6 plasmoid plus StatusNotifierItem support for GNOME / XFCE / Cinnamon / Budgie / MATE / LXQt, plus JSON output for Sway / i3 / polybar bars.
+- **[portunus-ovpn](https://github.com/ra-yavuz/portunus-ovpn)** &nbsp; KDE Plasma 6 panel widget. Native panel widget for switching OpenVPN connections through NetworkManager. Import, edit, remove, export and toggle .ovpn profiles from your panel; single-active by default with optional multi-active for split-tunnel combos. Per-connection remember-passphrase toggle backed by NetworkManager secret flags and KWallet. No second VPN daemon, no third-party PPA: drives the standard nmcli + NetworkManager + KWallet stack that already ships on KDE. Named after Portunus, the Roman god of keys and gates.
 
 #### Docs & guides
 
@@ -27,7 +28,7 @@ Categorized so things stay clear as more land here.
 
 Every Debian / Ubuntu tool above in one place, kept up to date with the rest of your system. **[ra-yavuz.github.io/apt](https://ra-yavuz.github.io/apt/)** is a single signed apt archive. Add it once, get every tool with `apt install` and `apt upgrade`, GPG-verified signatures on every package. Source: [ra-yavuz/apt](https://github.com/ra-yavuz/apt).
 
-One line. Sets up the signed repo if not already added, refreshes the package index, and installs the package. Replace `<package>` with `inhibit-charge`, `herald`, `meowtrics`, `lillycoder`, `hydra-llm`, or `hydra-rag-hooks`:
+One line. Sets up the signed repo if not already added, refreshes the package index, and installs the package. Replace `<package>` with `inhibit-charge`, `herald`, `meowtrics`, `lillycoder`, `hydra-llm`, `hydra-rag-hooks`, or `portunus-ovpn`:
 
 ```bash
 sudo bash -c 'set -e; install -m 0755 -d /etc/apt/keyrings && curl -fsSL https://ra-yavuz.github.io/apt/pubkey.gpg -o /etc/apt/keyrings/ra-yavuz.gpg && echo "deb [signed-by=/etc/apt/keyrings/ra-yavuz.gpg] https://ra-yavuz.github.io/apt stable main" > /etc/apt/sources.list.d/ra-yavuz.list && apt update && apt install -y <package>'
