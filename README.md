@@ -29,7 +29,7 @@ Categorized so things stay clear as more land here.
 
 #### General tools
 
-- **[wireless-paper-api](https://github.com/ra-yavuz/wireless-paper-api)** &nbsp; E-paper firmware + browser canvas + Python helpers. Paint, upload pictures, or send text to Heltec Wireless Paper over HTTP or raw LoRa. Includes a startup setup hotspot with saved policy, configurable radio send/receive, and packet logs. Source installation; no Debian package. [Project page](https://ra-yavuz.github.io/wireless-paper-api/).
+- **[wireless-paper-api](https://github.com/ra-yavuz/wireless-paper-api)** &nbsp; ESP32 firmware + Python helpers. Use Heltec Wireless Paper or Wireless Tracker as a two-way HTTP-to-LoRa adapter, with saved or per-request modem settings, a received-packet log, browser painting, and screen controls. [Project page](https://ra-yavuz.github.io/wireless-paper-api/).
 
 #### Docs & guides
 
